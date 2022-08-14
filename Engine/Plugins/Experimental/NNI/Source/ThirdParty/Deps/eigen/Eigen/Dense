@@ -1,0 +1,20 @@
+#ifndef __PROSPERO__ // WITH_UE
+PRAGMA_DEFAULT_VISIBILITY_START
+#endif
+#include "ThirdPartyWarningDisabler.h"
+NNI_THIRD_PARTY_INCLUDES_START
+#undef check
+#undef TEXT
+
+#include "Core"
+#include "LU"
+#include "Cholesky"
+#include "QR"
+#include "SVD"
+#include "Geometry"
+#include "Eigenvalues"
+
+NNI_THIRD_PARTY_INCLUDES_END // WITH_UE
+#ifndef __PROSPERO__ // WITH_UE
+PRAGMA_DEFAULT_VISIBILITY_END
+#endif
