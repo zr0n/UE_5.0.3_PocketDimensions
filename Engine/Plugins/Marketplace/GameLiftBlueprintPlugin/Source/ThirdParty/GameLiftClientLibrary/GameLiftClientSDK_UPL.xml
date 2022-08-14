@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright (C) Siqi.Wu - All Rights Reserved
+ * Written by Siqi.Wu <lion547016@gmail.com>, Dec 2018
+ */
+-->
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- init section is always evaluated once per architecture -->
+  <init>
+  </init>
+
+  <!-- optional files or directories to copy to Intermediate/Android/APK -->
+  <resourceCopies>
+    <log text="Copying libaws-cpp-sdk-gamelift.so"/>
+    <copyFile src="$S(PluginDir)/Android/$S(Architecture)/libaws-cpp-sdk-gamelift.so"
+              dst="$S(BuildDir)/libs/$S(Architecture)/libaws-cpp-sdk-gamelift.so" />
+  </resourceCopies>
+
+  <!-- optional libraries to load in GameActivity.java before libUE4.so -->
+  <soLoadLibrary>
+    <loadLibrary name="aws-cpp-sdk-gamelift" failmsg="Failed to load libaws-cpp-sdk-gamelift library" />
+  </soLoadLibrary>
+</root>

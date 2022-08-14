@@ -1,0 +1,57 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.9.14",
+	"FriendlyName": "GameLift Client + GameLift Server SDK",
+	"Description": "GameLift Client + GameLift Server plugin",
+	"Category": "Other",
+	"CreatedBy": "Siqi.Wu",
+	"CreatedByURL": "",
+	"DocsURL": "http://docs.aws.amazon.com/",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/361e3eed7f2d4862a0cb7c8f042e613b",
+	"SupportURL": "",
+	"EngineVersion": "5.0.0",
+	"CanContainContent": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "AWSCore",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"LinuxArm64",
+				"Mac",
+				"Android",
+				"IOS"
+			]
+		},
+		{
+			"Name": "GameLift",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"LinuxArm64",
+				"Mac",
+				"Android",
+				"IOS"
+			]
+		},
+		{
+			"Name": "GameLiftServerSDK",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"LinuxArm64",
+				"Mac",
+				"Android",
+				"IOS"
+			]
+		}
+	]
+}
